@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./multimedia/branding/isotype.svg" type="image/x-icon">
-    <title>FunkoShop</title>
+    <title>Home | FunkoShop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg text-white">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img class="logo" src="./assets/img/logo_Amazing_Events.png" alt="logo">
+            <img class="logo" src="./multimedia/branding/logo_light_horizontal.svg" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -23,33 +23,46 @@
         </button>
         <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
             <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto gap-2">
-                <li class="nav-item">
-                    <a class="nav-link btn active" aria-current="page" href="#">Home</a>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Shop
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link btn active" aria-current="page" href="#">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn" href="./upcoming-events.html">Upcoming Events</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link btn" href="./past-events.html">Past Events</a>
+                    <a class="nav-link btn" href="./upcoming-events.html">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn" href="./contact.html">Contact</a>
+                    <a class="nav-link btn" href="./contact.html">
+                      <img src="./multimedia/icons/cart-icon.svg" alt="cart-icon" class="cart-icon">
+                    </a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
+
             </ul>
         </div>
     </div>
 </nav>
-
+<section class="container-fluid  banner text-white">
+  <div class="container-fluid p-5  text-white banner-div">
+    <div class="row flex-lg-row align-items-center g-5 py-5 ">
+      <div class="col-lg-6">
+        <h2 class=" lh-1 mb-3">Nuevos ingresos</h2>
+        <p class="lead comment"> Descubrí el próximo Funko Pop de tu colección</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-lg p-1 px-5 btn-banner">Shop</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
