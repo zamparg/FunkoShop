@@ -4,63 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/branding/isotype.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./multimedia/branding/isotype.svg" type="image/x-icon">
     <title>Home | FunkoShop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <header>
+  
+  <header> <!-- Inicio Header -->
     <nav class="">
       <picture>
         <a class="navbar-brand logo" href="#">
-            <img class="" src="./img/branding/logo_light_horizontal.svg" alt="Isologo de Funkoshop">
+            <img class="" src="./multimedia/branding/logo_light_horizontal.svg" alt="Isologo de Funkoshop">
         </a>
       </picture>
       <ul>
-        <li><a href="">Shop</a></li>
-        <li><a href="">Contacto</a></li>
-        <li><a href="">Login</a></li>
-        <li><a href="">Carrito</a></li>
+        <li><a href="./pages/shop.html">Shop</a></li>
+        <li><a href="./pages/contact.html">Contacto</a></li>
+        <li><a href="./pages/login.html">Login</a></li>
+        <li><a href="./pages/cart.html">
+          <img src="./multimedia/icons/cart-icon.svg" alt="icono de carrito de compras">
+        </a></li>
       </ul>
   </nav>
-  </header>
-
-<section class="container-fluid  banner text-white">
-  <div class="container-fluid p-5  text-white banner-div">
-    <div class="row flex-lg-row align-items-center g-5 py-5 ">
-      <div class="col-lg-6">
-        <h2 class=" lh-1 mb-3">Nuevos ingresos</h2>
+  </header><!-- Fin Header -->
+  
+  
+  <main><!-- Inicio Main -->
+    <section><!--Banner-->
+      <article>
+        <h3 class=" lh-1 mb-3">Nuevos ingresos</h2>
         <p class="lead comment"> Descubrí el próximo Funko Pop de tu colección</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-lg p-1 px-5 btn-banner">Shop</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section>
-  <article class="container-fluid col-xxl-10 px-4 product-container">
-    <div class="row flex-lg-row-reverse align-items-center justify-content-center">
-      <div class="col-12 col-sm-8 col-lg-5">
-        <img src="./img/star-wars/baby-yoda-1.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-      </div>
-      <div class="col-lg-6 product-detail">
-        <div class="product-border">
-          <h3 class="product-title">Star Wars & the Mandalorian</h3>
-          <p class="lead">Disfruta de una saga que sigue agregando personajes a su colección.</p>
-        </div>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-dark btn-lg px-4 me-md-2 mt-4">Ver Colección</button>
-        </div>
-      </div>
-    </div>
-  </article>
+        <a href="./pages/shop.html">Shop</a>
+      </article>
+    </section>
+    <section><!--Cards-->
+      <article>
+        <h3 class="product-title">Star Wars & the Mandalorian</h3>
+        <p class="lead">Disfruta de una saga que sigue agregando personajes a su colección.</p>
+        <a href="./pages/shop.html">Ver Colección</a>
+      </article>
+      <picture>
+        <img src="./multimedia/star-wars/baby-yoda-1.webp" alt="baby yoda">
+      </picture>
+    </section>
+    <section><!--Carrousel-->
+      <h2>Últimos lanzamientos</h2>
+      <ul>
+        <li>
+          <article>
+            <a href="">
+              <picture>
+                <img src="./multimedia/star-wars/trooper-1.webp" alt="">
+              </picture>
+              <div>
+                <p>categoria</p>
+                <h3>Titulo</h3>
+                <p>precio</p>
+                <p>cuotas</p>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="">
+              <picture>
+                <img src="./multimedia/star-wars/trooper-1.webp" alt="">
+              </picture>
+              <div>
+                <p>categoria</p>
+                <h3>Titulo</h3>
+                <p>precio</p>
+                <p>cuotas</p>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="">
+              <picture>
+                <img src="./multimedia/star-wars/trooper-1.webp" alt="">
+              </picture>
+              <div>
+                <p>categoria</p>
+                <h3>Titulo</h3>
+                <p>precio</p>
+                <p>cuotas</p>
+              </div>
+            </a>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main><!-- Fin Main -->
 
+  <footer><!-- Inicio Footer -->
+    <section>
+      <nav>
+        <ul>
+          <li><a href="./pages/shop.html">Shop</a></li>
+          <li><a href="./pages/register.html">Registrarse</a></li>
+          <li><a href="./pages/login.html">Ingresar</a></li>
+          <li><a href="./pages/contact.html">Contacto</a></li>
+         
+        </ul>
+      </nav>
+      <picture>
+        <img src="./multimedia/branding/logo_light_horizontal.svg" alt="isotipo marca Funko">
+      </picture>
+    </section>
+    <p>All rights reserved 2022 - Funkoshop &copy;</p>
+  </footer><!-- Fin Footer -->
 
-</section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>
