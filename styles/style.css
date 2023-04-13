@@ -53,79 +53,87 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html{
     font-family: var(--base-font);
     font-size: 62.5%;
     color: var(--dark-solid);
 }
-
-/*GENERALES*/
-*{
-    font-family: 'Raleway', sans-serif;
+a{
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
 }
-.btn{
-    text-transform: uppercase;
-    font-weight: 500;
+p{
+    font-size: var(--font-medium);
 }
-/*NAVBAR*/
-.logo{
-    height: 50%;
-}
-nav {
-color: white;
-background-color: #30343F;
-
-}
-.nav-link {
-    color: white;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-.cart-icon{
-    width: 32px;
-}
-
-/*BANNER*/
-.banner{
-
-    height: 388px;
-    background-image: url(../multimedia/funkos-banner.webp);
-    background-size: cover;
-    background-position-y: 90%;
-    
-    padding: 0;
-}
-.banner-div{
-    height: 100%;
+img{
     width: 100%;
-    --bs-gutter-x:0;
-    backdrop-filter: blur(3px) brightness(50%);
 }
-.banner h2{
-    color: white;
-    font-size: 38px;
-    font-weight: 700;
-}
-.btn-banner{
-    background-color: white;
-    border-radius: 25px;
+ul{
+    list-style-type: none;
 }
 
-/*ARTICLES*/
+/*HEADER*/
+header{
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+}   
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.product-title{
-    font-size: 46px;
+.navbar__logo{
+    max-width: 300px;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+
+    list-style-type: none;
+}
+.navbar__link{
+    color: var(--light-solid);
+    font-family: var(--alternative-font);
     text-transform: uppercase;
-    font-weight: 500;
+    font-size:var(--font-medium);
+    display: inline-block;
+    padding: var(--spacing-8) var(--spacing-16);
+    transition: background .3s ease-in-out;
+    position: relative;
 }
-.product-detail{
-    padding-right: 15%;
-    
+
+.navbar__link:hover{
+    background-color: var(--primary-solid);
 }
-.product-border{border-bottom: #FF3333 3px solid;}
 
-.btn-dark{
-    border-radius: 30px;
-
+.with-icon{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+.with-submenu:hover .submenu{
+    display: block;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+    width: 300px;
+}
+.submenu__link{
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    color: var(--light-solid);
+    font-family: var(--alternative-font);
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: background .3s ease-in-out;
+}
+.submenu__link:hover{
+    background-color: var(--primary-solid);
 }
