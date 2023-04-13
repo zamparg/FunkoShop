@@ -73,6 +73,11 @@ ul{
     list-style-type: none;
 }
 
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
 /*HEADER*/
 header{
     background-color: var(--dark-bg-solid);
@@ -136,4 +141,9 @@ header{
 }
 .submenu__link:hover{
     background-color: var(--primary-solid);
+}
+
+/*HERO*/
+.hero{
+    background-image: url(../multimedia/funkos-banner.webp);
 }
